@@ -1,17 +1,11 @@
 import { Routes, RouterModule } from '@angular/router';
-import { PagesComponent } from './pages.component';
-import { LoginComponent } from './login/login.component';
-
-import { EmployeeComponent } from './employee/employee.component';
+import { EmployeeComponent } from './employee.component';
 
 export const childRoutes: Routes = [
+
     {
-        path: 'login',
-        component: LoginComponent,
-    },
-    {
-        path: 'pages',
-        component: PagesComponent,
+        path: 'employee',
+        component: EmployeeComponent,
         children: [
             { path: '', redirectTo: 'index', pathMatch: 'full' },
             { path: 'index', loadChildren: './index/index.module#IndexModule' },
