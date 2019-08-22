@@ -1,0 +1,167 @@
+<div>
+    {{complex |json}}
+    <card cardTitle="Add Complex">
+      <form #complexForm="ngForm"  novalidate >
+        <div class="row">
+          <div class="col-sm-2">
+              <label class="control-label">Name</label>
+          </div>
+          <div class="col-sm-10">
+
+              <div class="row">
+                <div class="col-sm-6">
+                    <input type="text" #name="ngModel" [(ngModel)]="complex.name"  class="form-control w-10 " name="name"  placeholder="Name">
+             
+                </div>
+                <div class="col-sm-6">
+                    <label class="control-label">Reg. No.</label>
+                    <input type="text" name="reg" #reg="ngModel" [(ngModel)]="complex.Reg"  class="form-control w-10 " placeholder="Reg. No.">
+                   
+             
+                </div>
+                 
+              </div>
+
+              
+          
+          </div>
+        </div>
+        <br>
+        <div class="row mt-2">
+            <div class="col-sm-2">
+                <label class="control-label">Website URL : </label>
+            </div>
+            <div class="col-sm-10">              
+                <input type="text" name="url" #url="ngModel" [(ngModel)]="complex.URL" class="form-control w-10 " placeholder="Website">
+
+            </div>
+        </div>
+        <br>
+        <div class="row mt-2">
+            <div class="col-sm-2">
+                <label class="control-label">Address : </label>
+            </div>
+            <div class="col-sm-10"> 
+                <div class="row"> 
+                  <div class="pl-2,pr-2">  
+                    <input type="text" name="street1" #street1="ngModel" [(ngModel)]="address.street1 " class="form-control w-10 " placeholder="Street ">
+                    <label class="control-label">Street Address</label>  
+                  </div>             
+                </div>
+
+                <div class="row">   
+                    <input type="text" name="street2"  #street2="ngModel" [(ngModel)]="address.street2" class="form-control w-10 " placeholder="Address 2">
+                    <label class="control-label">Street Address Line 2</label>               
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-6">
+                      <input type="text" class="form-control w-10 " name="city"  #city="ngModel" [(ngModel)]="address.city" placeholder="City">
+                      <label class="control-label">City</label>      
+                  </div>
+                  <div class="col-sm-6">
+                      <input type="text" name="state"  #state="ngModel" [(ngModel)]="address.state" class="form-control w-10 " placeholder="State">
+                      <label class="control-label">State</label>      
+                  </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <input type="text" name="postal"  #postal="ngModel" [(ngModel)]="address.postal " class="form-control w-10 " placeholder="Name">
+                        <label class="control-label">Postal Code</label>      
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" name="country"  #country="ngModel" [(ngModel)]="address.country" class="form-control w-10 " placeholder="Name">
+                        <label class="control-label">Country</label>      
+                    </div>
+                  </div>
+
+            </div>
+        </div>
+
+        <br>
+        <div class="row mt-2">
+            <div class="col-sm-2">
+                <label class="control-label">Email : </label>
+            </div>
+            <div class="col-sm-10">              
+                <input type="text" name="email"  #email="ngModel" [(ngModel)]="email" class="form-control w-10 " placeholder="Email">
+
+            </div>
+        </div>
+
+        <br>
+        <div class="row mt-2">
+            <div class="col-sm-2">
+                <label class="control-label">Phone Number : </label>
+            </div>
+            <div class="col-sm-10">              
+                <input name="phone"  #phone="ngModel" [(ngModel)]="phone" type="text" class="form-control w-10 " placeholder="Phone ">
+
+            </div>
+        </div>
+
+        <br>
+        <div class="row mt-2">
+            <div class="col-sm-2">
+                <label class="control-label">Build Date : </label>
+            </div>
+            <div class="col-sm-10">              
+                <input type="date" name="build"  #build="ngModel" [(ngModel)]="complex.build" class="form-control w-10 " placeholder="Name">
+
+            </div>
+        </div>
+
+        <br>
+        <div class="row mt-2">
+            <div class="col-sm-2">
+                <label class="control-label">Wings : </label>
+            </div>
+            <div class="col-sm-10">     
+              <div class="row"> 
+                <div class="col-sm-4">        
+                  <input type="text" class="form-control w-10 " placeholder="Name">
+                  <label class="control-label">Name </label>
+                </div>
+                <div class="col-sm-2">        
+                    <input type="number" class="form-control w-10 " placeholder="Name">
+                    <label class="control-label">Floor Number: </label>
+                </div>
+
+                <div class="col-sm-2">        
+                    <input type="number" class="form-control w-10 " placeholder="Name">
+                    <label class="control-label">Flat Start Number: </label>
+                </div>
+
+                <div class="col-sm-2">        
+                    <input type="number" class="form-control w-10 " placeholder="Name">
+                    <label class="control-label">Flat End Number: </label>
+                </div>
+
+                <div class="col-sm-2">        
+                   <button class="btn btn-primary"> +</button>
+                </div>
+              </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-2">
+                <label class="control-label">Number of Gate: </label>
+            </div>
+            <div class="col-sm-10">  
+              <div>
+
+              </div>            
+                <input type="number" class="form-control w-10 " placeholder="Name">
+
+            </div>
+        </div>
+        <br>
+        <div class="row">
+        <button class="btn btn-block btn-success " >Save</button></div>
+      </form>
+   </card>
+  </div>
+  

@@ -1,33 +1,38 @@
 export let MENU_ITEM = [
       {
-        path:'Complex',
+        path:'complex',
         title:'Complex Details',
         icon:'building'
       },
       {
-        path:'Employee',
+        path:'employee',
         title:'Employee List',
         icon:'list-alt'
       },
       {
-        path:'Owner',
+        path:'owner',
         title:'Flat Owner List ',
         icon:'list-alt'
       },
       {
-        path:'Maintence',
-        title:'Mainttenence',
-        icon:'toolbox'
+        path:'maintenances',
+        title:'Maintenances',
+        icon:'hammer'
       },
       {
-        path:'Complaints',
+        path:'complaints',
         title:'Complaints',
         icon:'rss-square'
       },
       {
-        path:'Visitor',
+        path:'visitor',
         title:'Visitor List',
         icon:'list-alt'
+      },
+      {
+        path:'notification',
+        title:'Notification',
+        icon:'bells'
       },
 
     // {

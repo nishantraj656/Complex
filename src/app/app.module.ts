@@ -6,6 +6,7 @@ import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './pages/login/login.component';
+import { SuperAdminModule } from './super-admin/super-admin.module';
 
 @NgModule({
   imports: [
@@ -14,7 +15,7 @@ import { LoginComponent } from './pages/login/login.component';
     FormsModule,
     PagesModule,
     routing,
-   
+    SuperAdminModule
   ],
   declarations: [
     AppComponent,

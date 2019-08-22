@@ -8,14 +8,21 @@ const appRoutes: Routes = [
     component:LoginComponent ,
   },
   {
-    path: 'dashboard',
+    path: 'pages',
     redirectTo: 'pages/index',
     pathMatch: 'full'
+  },
+  {
+    path: 'Admin',
+    redirectTo: 'Admin/main',
+    pathMatch: 'full'
+   
   },
   { 
     path: '**',
     redirectTo: 'pages/index'
-  }
+  },
+ 
 ];
 
 export const routing = RouterModule.forRoot(appRoutes);

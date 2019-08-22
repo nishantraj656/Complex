@@ -8,6 +8,10 @@ import { SharedModule } from '../shared/shared.module';
 /* components */
 import { PagesComponent } from './pages.component';
 import { EmployeeComponent } from './employee/employee.component';
+import { MaintenancesComponent } from './maintenances/maintenances.component';
+import { VisitorComponent } from './visitor/visitor.component';
+import { NotificationComponent } from './notification/notification.component';
+import { ComplexDetailsComponent } from './complex-details/complex-details.component';
 
 
 @NgModule({
@@ -19,7 +23,10 @@ import { EmployeeComponent } from './employee/employee.component';
     ],
     declarations: [
         PagesComponent,
-        EmployeeComponent,
+       MaintenancesComponent,
+       VisitorComponent,
+       NotificationComponent,
+       ComplexDetailsComponent
 
     ]
 })

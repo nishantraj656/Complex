@@ -1,0 +1,45 @@
+<div class="pages-wrap">
+    <pages-top></pages-top>
+    <div class="pages-body">
+      <div class="pages-sider" [ngClass]="{'side-collapsed':!sidebarToggle}">
+          <span class="sidebar-top-line"></span>
+            <app-item></app-item>
+            <div class="menu-item">
+              <div class="menu-link">
+            <button class="btn btn-primary">Add Complex</button></div>
+          </div>
+      </div>
+        
+      
+      <div class="pages-content">
+       
+        <!-- <router-outlet></router-outlet> -->
+       
+          
+          <div class="row">
+           
+              <card cardTitle="Complex">
+                <tabset id="tabs3" theme="justified">
+                  <tab-content for="tabs3" tabTitle="Complex" [active]="true">
+                      <app-complex></app-complex>
+                  </tab-content>
+                  <tab-content for="tabs3" tabTitle="Facility">
+                      <app-facility></app-facility>
+                  </tab-content>
+                  <tab-content for="tabs3" tabTitle="Association Details">
+                    <app-association-details></app-association-details>
+                  </tab-content>
+                </tabset>
+              </card>
+           
+          </div>
+          
+        <!-- hell -->
+      </div>
+  
+     
+  
+    </div>
+</div>
+ 
+  
